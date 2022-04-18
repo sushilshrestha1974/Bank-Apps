@@ -1,11 +1,11 @@
 package Bankaccountapps;
 
+import java.util.List;
+
 public class BankAccountApps {
 	
 	public static void main (String [] args) {
-		String file= 
-		
-	
+		String file= "C:\\Users\\SushilShrestha\\NewBankAccounts.csv";
 
 	/*public static void main(String[] args) {
 		Checking chkaccount = new Checking("Sushil Shrestha", "458777544", 498);
@@ -20,13 +20,19 @@ public class BankAccountApps {
 		savaccount.withdraw(2500);
 		savaccount.transfer("Atlanta", 150);*/
 	
-		
+				
 		
 	
 		//read css file
 		List<String[]> newAccountHolder = utilities.CSV.read(file);
-		
+		for (String[] accountHolder : newAccountHolder) {
+System.out.println("New Account");
+			System.out.println(accountHolder[0]);
+System.out.println(accountHolder[1]);
+System.out.println(accountHolder[2]);
+System.out.println(accountHolder[3]);
 
 	}
+}
 }
 
